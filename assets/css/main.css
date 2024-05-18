@@ -1,0 +1,67 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+  --yellow-orange: hsl(36, 100%, 50%);
+  --battleship-gray: hsl(0, 0%, 53%);
+  --pinkslow : #fc7186;
+  --mint-cream: hsl(96, 36%, 95%);
+}
+
+
+a,
+img,
+span,
+input,
+label,
+button,
+ion-icon { display: block; }
+
+img { height: auto; }
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+
+.has-scrollbar {
+  display: flex;
+  overflow-x: auto;
+  padding-block-end: 30px;
+  margin-block-end: -30px;
+  scroll-snap-type: inline mandatory;
+}
+
+.has-scrollbar::-webkit-scrollbar { height: 10px; }
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background-color: var(--black_25); }
+
+.section-subtitle {
+  color: black;
+  font-family: var(--ff-playfair-display);
+  font-size: var(--fs-3);
+  font-style: italic;
+  margin-block-end: 10px;
+}
+
+.section-subtitle,
+.section-title { text-align: center; }
+
+.rating-wrapper {
+  color: var(--yellow-orange);
+  display: flex;
+  justify-content: var(--justify-content, center);
+  gap: 2px;
+  font-size: 1.4rem;
+}
+
+.testi-card {
+  background-color: var(--mint);
+}
